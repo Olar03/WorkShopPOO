@@ -1,6 +1,6 @@
 ﻿
+using System.Collections;
 using WorkShopPOO;
-
 
 
 Console.WriteLine("PRODUCTS");
@@ -12,8 +12,6 @@ Product product1 = new FixedPriceProduct()
     Price = 46000M,
     Tax = 0.19F
 };
-
-
 Product product2 = new FixedPriceProduct()
 {
     Description = "Pan Bimbo Artesanal",
@@ -39,14 +37,6 @@ Product product4 = new VariablePriceProduct()
     Quantity = 0.389F,
     Tax = 0.19F
 };
-
-
-Console.WriteLine(product1);
-Console.WriteLine(product2);
-Console.WriteLine(product3);
-Console.WriteLine(product4);
-
-
 //Product product5 = new ComposedProduct()
 //{
 //    Description = "Ancheta #1",
@@ -59,6 +49,7 @@ Console.WriteLine(product4);
 //Console.WriteLine(product3);
 //Console.WriteLine(product4);
 //Console.WriteLine(product5);
+
 
 //Invoice invoice = new Invoice();
 //invoice.AddProduct(product1);
