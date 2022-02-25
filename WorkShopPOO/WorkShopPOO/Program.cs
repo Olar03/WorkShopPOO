@@ -3,6 +3,7 @@ using WorkShopPOO;
 
 Console.WriteLine("PRODUCTS");
 Console.WriteLine("-------------------------------------------------");
+
 Product product1 = new FixedPriceProduct()
 {
     Description = "Vino Gato Negro",
@@ -47,7 +48,6 @@ Console.WriteLine(product2);
 Console.WriteLine(product3);
 Console.WriteLine(product4);
 Console.WriteLine(product5);
-
 
 Invoice invoice = new Invoice();
 invoice.AddProduct(product1);

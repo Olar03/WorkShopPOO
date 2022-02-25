@@ -17,20 +17,22 @@ namespace WorkShopPOO
             decimal Value = 0;
             foreach (Product product in Products)
             {
-                Value = Value + product.GetValueToPay();
+                Value += product.GetValueToPay();
 
             }            
-            return  Value - (Value * (decimal)Discount);
+            return Value - (Value * (decimal)Discount);
 
         }
 
         public override string ToString()
         {
 
-            string NameProduct = " ";
+            string NameProduct = "";
+            String values = " ";
             foreach (Product Product in Products)
             {
                 NameProduct += Product.Description + ", ";
+               
             }
 
             return $"{Id}\t{Description}" +
