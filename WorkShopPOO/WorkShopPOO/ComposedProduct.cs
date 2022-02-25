@@ -1,13 +1,8 @@
-﻿
-using System.Collections.Generic;
-
-namespace WorkShopPOO
+﻿namespace WorkShopPOO
 
 {
     public class ComposedProduct : Product
     {
-
-
         public float Discount { get; set; }
 
         public List<Product> Products { get; set; }
@@ -19,20 +14,18 @@ namespace WorkShopPOO
             {
                 Value += product.GetValueToPay();
 
-            }            
+            }
             return Value - (Value * (decimal)Discount);
-
         }
 
         public override string ToString()
         {
 
             string NameProduct = "";
-            String values = " ";
             foreach (Product Product in Products)
             {
                 NameProduct += Product.Description + ", ";
-               
+
             }
 
             return $"{Id}\t{Description}" +
