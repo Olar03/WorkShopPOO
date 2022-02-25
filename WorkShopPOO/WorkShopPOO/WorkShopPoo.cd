@@ -30,7 +30,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="WorkShopPOO.Invoice">
-    <Position X="6.75" Y="1" Width="1.5" />
+    <Position X="5.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAQAAAAgAAAAAIAAAAAAAAAAA=</HashCode>
       <FileName>Invoice.cs</FileName>

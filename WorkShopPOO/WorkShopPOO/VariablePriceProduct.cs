@@ -9,14 +9,15 @@
 
         public override decimal GetValueToPay()
         {
-            return Price * (decimal)Quantity;
+            Price = Price * (Decimal)Quantity;
+            return Price + (Price * (decimal)Tax);
         }
 
         public override string ToString()
         {
             return $"{Id}\t{Description}" +
-                   $"\n\tMeasurement....:{Measurement:N2}" +
-                   $"\n\tQuantity.......:{$"{Price:C2}",15}" +
+                   $"\n\tMeasurement....:\t{Measurement:N2}" +
+                   $"\n\tQuantity.......:{$"{Quantity:N2}",15}" +
                    $"\n\tPrice..........:{$"{Price:C2}",15}" +
                    $"\n\tTax............:{$"{Tax:P2}",15}" +
                    $"\n\tValue..........:{$"{GetValueToPay():C2}",15}";

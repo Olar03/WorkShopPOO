@@ -1,34 +1,49 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WorkShopPOO
+﻿namespace WorkShopPOO
 {
     public class Invoice : IPay
     {
-        ICollection<Product> _Products;
+
+        List<Product> _Products = new List<Product>();
+
+        public Invoice()
+        {
+            
+        }
+
+       public void AddProduct (Product product)
+        {
+            _Products.Add(product);
+           
+        }
 
 
-//        public void string AddProduct()
-//        {
-//            _Products = new List<Product> ();
+        public decimal GetValueToPay()
+        {
+            decimal Value = 0;
 
-//        }
+            foreach (Product product in _Products)
+            {
+                Value += product.GetValueToPay();
+            }
 
-        
-//        public decimal GetValueToPay()
-//        {
-//            return _Products.Count;
-//        }
+            return Value;
+        }
 
-//        public override string ToString()
-//        {
-//            return $"RECEIPT\n___________________________________" +
-//                   $"\n\t{_Products}" +
-//                   $"\n\t\t\t========================" +
-//                   $"\n\tTOTAL:\t {$"{GetValueToPay()}",15}";
-//        }
-//    }
-//}
+        public override string ToString()
+        {
+            string details = " ";
+            foreach (Product product in _Products)
+            {
+                details += product.ToString() + "\n";
+            }
+
+            return $"RECEIPT\n" +
+                    $"----------------------------------------------------------------" +
+                    $"\n{details}" +
+                    $"\n\t                ===============" +
+                    $"\n\tTOTAL..........:{$"{GetValueToPay():C2}",15}";
+
+
+        }
+    }
+}

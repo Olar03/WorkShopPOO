@@ -11,7 +11,7 @@
 
         public float Tax { get; set; }
 
-        public abstract decimal GetValueToPay();
+       public abstract decimal GetValueToPay();
 
         public override string ToString()
         {

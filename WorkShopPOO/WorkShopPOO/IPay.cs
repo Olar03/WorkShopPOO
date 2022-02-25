@@ -2,8 +2,7 @@
 {
     public interface IPay
     {
-        public Decimal GetValueToPay();
-
-
+         Decimal GetValueToPay();
+        
     }
 }
