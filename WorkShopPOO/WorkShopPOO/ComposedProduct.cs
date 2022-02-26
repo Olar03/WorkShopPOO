@@ -10,9 +10,9 @@
         public override decimal GetValueToPay()
         {
             decimal Value = 0;
-            foreach (Product product in Products)
+            foreach (Product P in Products)
             {
-                Value += product.GetValueToPay();
+                Value += P.GetValueToPay();
 
             }
             return Value - (Value * (decimal)Discount);
@@ -20,7 +20,6 @@
 
         public override string ToString()
         {
-
             string NameProduct = "";
             foreach (Product Product in Products)
             {

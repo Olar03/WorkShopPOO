@@ -21,9 +21,9 @@
         {
             decimal Value = 0;
 
-            foreach (Product product in _Products)
+            foreach (Product Prod in _Products)
             {
-                Value += product.GetValueToPay();
+                Value += Prod.GetValueToPay();
             }
 
             return Value;

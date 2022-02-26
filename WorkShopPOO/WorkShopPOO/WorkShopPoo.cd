@@ -23,14 +23,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="WorkShopPOO.ComposedProduct">
-    <Position X="2.5" Y="3.5" Width="1.5" />
+    <Position X="2.5" Y="3.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAIAgAAAAAAAAQ=</HashCode>
       <FileName>ComposedProduct.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WorkShopPOO.Invoice">
-    <Position X="0.5" Y="2.25" Width="1.5" />
+    <Position X="0.5" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAQAAAAgAAAAAIAAAAAAAAAAA=</HashCode>
       <FileName>Invoice.cs</FileName>
